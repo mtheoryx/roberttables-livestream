@@ -8,4 +8,5 @@
 
 ## [phrakberg]()
 
-- Helped debug my local terraform and awsume issue
+- Helped debug my local terraform and awsume issue (I'm an idiot and was running TF commands in docker)
+- Caught the spaces in the subnet IP range terraform var list
