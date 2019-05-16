@@ -6,7 +6,7 @@
 - [x] Solidifying projects focus
 - [x] MTG win from Spicy
 - [ ] DO THE THING
-- [ ] Retrospective / Raid Plans
+- [ ] Retrospective / Raid Plans (csharpfritz)
 
 ## Goals
 
