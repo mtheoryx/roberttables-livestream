@@ -150,3 +150,4 @@ $RECYCLE.BIN/
 
 # Gatsby ignores
 public-site/public
+*.sketch
