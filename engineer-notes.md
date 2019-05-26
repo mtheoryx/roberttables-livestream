@@ -12,6 +12,7 @@
 
 ## Initial launch
 
+- Base pages and Nav
 - Styling and branding
 - Fonts/Colors
 - Icons/images
