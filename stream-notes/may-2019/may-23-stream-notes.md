@@ -11,19 +11,18 @@
 
 ## Goals
 
-- [ ] Gatsby starter-default boilerplate removed
+- [x] Gatsby starter-default boilerplate removed
 - [x] Styled components added
-- [ ] Get the basic top-level styles set up
-- [ ] Add the basic pages and nav
-- [ ] Schedule page
+- [-] Get the basic top-level styles set up
+- [x] Add the basic pages and nav
+- [x] Schedule page
 - [x] Data fetching for schedule page
 
 ## Next steps
 
-- Debug the index page hijacking
-- Schedule component
-- Schedule add more data to the list
-- All that other stuff we didnt get to lul
+- [-] Debug the index page hijacking
+- [x] Schedule component
+- [-] Schedule add more data to the list
 
 ## Meta
 
