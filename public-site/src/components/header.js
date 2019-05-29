@@ -1,65 +1,49 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import Navigation from "./Navigation"
+
+const StyledHeader = styled.header`
+  background: rebeccapurple;
+  margin-bottom: 1rem;
+  div {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+
+    h1 {
+      margin: 0;
+    }
+  }
+`
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`
 
 const Header = ({ siteTitle, navLinks }) => (
   <>
-    <header
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
+    <StyledHeader>
+      <div>
+        <h1>
+          <StyledLink to="/">{siteTitle}</StyledLink>
         </h1>
       </div>
-    </header>
-    <nav
-      style={{
-        display: "flex",
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      {/* @TODO: Move to component and import, and use styled-components */}
-      {/* @TODO: make responsive on mobile with optional drop-down on small sizes? */}
-      {navLinks.map((navLink, index) => (
-        <li style={{ listStyleType: "none", marginRight: "15px" }}>
-          <Link
-            to={navLink.link}
-            style={{ color: `rebeccapurple`, textTransform: "capitalize" }}
-          >
-            {navLink.name}
-          </Link>
-        </li>
-      ))}
-    </nav>
+    </StyledHeader>
+    <Navigation navLinks={navLinks} />
   </>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  navLinks: PropTypes.array,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  navLinks: [],
 }
 
 export default Header
