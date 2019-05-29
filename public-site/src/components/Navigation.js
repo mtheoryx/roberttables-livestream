@@ -8,8 +8,8 @@ const navBreakage = 740
 
 const getWidth = () => {
   return {
-    innerWidth: window.innerWidth,
-    outerWidth: window.outerWidth,
+    innerWidth: typeof window !== "undefined" ? window.innerWidth : 0,
+    outerWidth: typeof window !== "undefined" ? window.outerWidth : 0,
   }
 }
 
