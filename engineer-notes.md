@@ -12,12 +12,12 @@
 
 ## Initial launch
 
-- Base pages and Nav
-- Styling and branding
-- Fonts/Colors
-- Icons/images
-- Simple, mobile-first layout
-- Just. The. Basics.
+- [x] Base pages and Nav
+- [x] Styling and branding
+- [x] Fonts/Colors
+- [x] Icons/images
+- [x] Simple, mobile-first layout (focus on the nav!)
+- [x] Just. The. Basics.
 
 ### Base pages
 
