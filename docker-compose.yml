@@ -10,5 +10,4 @@ services:
       - 8000:8000
     volumes:
       - ./public-site:/usr/app
-      - ./stream-notes:/usr/app/stream-notes
       - /usr/app/node_modules
