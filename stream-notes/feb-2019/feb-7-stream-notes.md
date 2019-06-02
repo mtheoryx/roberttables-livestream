@@ -1,3 +1,9 @@
+---
+date: '2019-2-7'
+category: 'Software'
+description: ''
+---
+
 # Stream notes February 7, 2019
 
 ## Segments
@@ -14,7 +20,7 @@
 
 - Spotify lyrics in extension work
 - I dont like VS Code "Vim mode, yet"
-- rwscheerer - $PWD
+- rwscheerer - \$PWD
 - The mdx-deck install instructions "Quickstart" does nothing
 - The language syntax highlighting needs a theme and styling
 - The syntax highlighting in mdx-deck need style config

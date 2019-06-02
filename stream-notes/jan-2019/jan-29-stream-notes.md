@@ -1,3 +1,9 @@
+---
+date: '2019-1-29'
+category: 'Software'
+description: ''
+---
+
 # Stream notes January 29, 2019
 
 ## Segments
@@ -23,8 +29,8 @@
 
 ## Goals
 
-- 
+-
 
 ## Next Steps
 
-- 
+-

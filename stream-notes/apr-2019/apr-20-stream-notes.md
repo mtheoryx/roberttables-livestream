@@ -1,3 +1,9 @@
+---
+date: '2019-4-20'
+category: 'Software'
+description: ''
+---
+
 # Stream notes April 20, 2019
 
 ## Segments
@@ -12,7 +18,7 @@
 
 - POC power solution for a 9 led strip
 - 9-led control vs 3 POC separate strips
-- MX Chip data reporting 
+- MX Chip data reporting
 
 ## Next steps
 

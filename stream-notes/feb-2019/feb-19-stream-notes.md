@@ -1,3 +1,9 @@
+---
+date: '2019-2-19'
+category: 'Software'
+description: ''
+---
+
 # Stream notes February 19, 2019
 
 ## Segments
@@ -15,7 +21,7 @@
 
 ## Notes
 
-- 
+-
 
 ## Goals
 
@@ -26,4 +32,4 @@
 
 ## Next steps
 
-- 
+-

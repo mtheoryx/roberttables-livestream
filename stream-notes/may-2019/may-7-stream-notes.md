@@ -1,3 +1,9 @@
+---
+date: '2019-5-7'
+category: 'Software'
+description: ''
+---
+
 # Stream notes May 7, 2019
 
 ## Segments
@@ -31,4 +37,4 @@
 ## Meta
 
 - (Getting started Gatsby Amplify)[https://www.gatsbyjs.org/blog/2018-08-24-gatsby-aws-hosting/#getting-started-gatsby]
-- (Luvan_ WinTerm Lust)[https://i.imgur.com/EPs30u9.jpg]
+- (Luvan\_ WinTerm Lust)[https://i.imgur.com/EPs30u9.jpg]

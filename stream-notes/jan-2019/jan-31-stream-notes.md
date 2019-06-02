@@ -1,3 +1,9 @@
+---
+date: '2019-1-31'
+category: 'Software'
+description: ''
+---
+
 # Stream notes January 31, 2019
 
 ## Segments
@@ -21,11 +27,11 @@
 ## Notes
 
 - Loopback, a pricy paid app on the mac, is NOT intuitive for its purpose (this also could be my ignorance with OBS audio input settings)
-- If you are pushing a bunch of commits and it seems really slow, you done goofed, revert 
+- If you are pushing a bunch of commits and it seems really slow, you done goofed, revert
 
 ## Goals
 
-- 
+-
 
 ## Next Steps
 

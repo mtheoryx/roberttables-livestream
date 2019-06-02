@@ -1,3 +1,9 @@
+---
+date: '2019-1-26'
+category: 'Software'
+description: ''
+---
+
 # Stream notes January 25, 2019
 
 ## Segments
@@ -10,7 +16,7 @@
 
 ## Things we learned
 
-- 
+-
 
 ## Notes
 

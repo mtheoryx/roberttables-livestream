@@ -1,3 +1,9 @@
+---
+date: '2019-2-14'
+category: 'Software'
+description: ''
+---
+
 # Stream notes Feburary 12, 2019
 
 ## Segments
@@ -12,7 +18,7 @@
 
 ## Things we learned
 
--  Test the ip out put we desire ipv4, but some give ipv6
+- Test the ip out put we desire ipv4, but some give ipv6
 
 ## Notes
 
@@ -22,11 +28,11 @@
 
 ## Goals
 
-- Security group 
+- Security group
 - SG rules
 - dynamically get my ip, pass in as a run-time var (to not leak to twitch)
 - Do the ec2 bastion instance launch/kill based on a ternary
 
 ## Next steps
 
-- 
+-

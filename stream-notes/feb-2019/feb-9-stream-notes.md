@@ -1,3 +1,9 @@
+---
+date: '2019-2-9'
+category: 'Software'
+description: ''
+---
+
 # Stream notes February 9, 2019
 
 ## Segments
@@ -11,7 +17,7 @@
 ## Things we learned
 
 - rwscheerer - Don't have spaces surrounding "=" in bash
-- Terraform destroy *does* have an `auto-approve` flag
+- Terraform destroy _does_ have an `auto-approve` flag
 - After destroy, there isn't any thing to log out (now show or outputs)
 - Say command will not be reliable: It's not portable, and can't demo
 - USB hub, webcams randomly quitting. I hear a "glitch" in the Arctis 7 chat sound
@@ -40,4 +46,3 @@
 - Pass params/args to scripts with streamdeck
 - JS SDK for AWS
 - JS SDK for Streamdeck, make a plugin?
-

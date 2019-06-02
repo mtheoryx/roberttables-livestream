@@ -1,4 +1,10 @@
-# Stream notes Thursday Dec 27, 2018
+---
+date: '2018-12-27'
+category: 'Software'
+description: ''
+---
+
+# Stream notes Dec 27, 2018
 
 ## Welcomes!
 

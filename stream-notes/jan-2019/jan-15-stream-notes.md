@@ -1,3 +1,9 @@
+---
+date: '2019-1-15'
+category: 'Software'
+description: ''
+---
+
 # Stream notes January 15, 2019
 
 ## Segments
@@ -29,4 +35,3 @@
 - ECS, service and task definitions
 - Routing
 - Healthchecks!!
-

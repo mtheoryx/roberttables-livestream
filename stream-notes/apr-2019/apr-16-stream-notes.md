@@ -1,3 +1,9 @@
+---
+date: '2019-4-16'
+category: 'Software'
+description: ''
+---
+
 # Stream notes April 16, 2019
 
 ## Segments
@@ -11,7 +17,7 @@
 
 - [x] At least a plan to Gatsby-ify my shownotes
 - [x] Some progress on the MPG tracker
-- 
+-
 
 ## Next Steps
 

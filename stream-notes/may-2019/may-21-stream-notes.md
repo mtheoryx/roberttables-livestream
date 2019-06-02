@@ -1,3 +1,9 @@
+---
+date: '2019-5-21'
+category: 'Software'
+description: ''
+---
+
 # Stream notes May 21, 2019
 
 ## Segments
@@ -21,7 +27,7 @@
 ## Next steps
 
 - Make a dang stream checklist (reminder from phrakberg)
-- 
+-
 
 ## Meta
 

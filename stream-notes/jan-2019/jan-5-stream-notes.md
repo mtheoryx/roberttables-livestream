@@ -1,4 +1,10 @@
-# Stream notes Saturday January 5, 2019
+---
+date: '2019-1-5'
+category: 'Software'
+description: ''
+---
+
+# Stream notes January 5, 2019
 
 ## Segments
 

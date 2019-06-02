@@ -1,3 +1,9 @@
+---
+date: '2019-2-2'
+category: 'Software'
+description: ''
+---
+
 # Stream notes February 2, 2019
 
 **Today's Thought**

@@ -1,3 +1,9 @@
+---
+date: '2019-3-19'
+category: 'Software'
+description: ''
+---
+
 # Stream notes March 19, 2019
 
 ## Segments/Updates
@@ -23,4 +29,4 @@
 
 ## Next steps
 
-- 
+-

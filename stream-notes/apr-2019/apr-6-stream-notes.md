@@ -1,3 +1,9 @@
+---
+date: '2019-4-6'
+category: 'Software'
+description: ''
+---
+
 # Stream notes April 6, 2019
 
 ## Segments
@@ -26,4 +32,3 @@
 - [ ] Get particle code into VS Code
 - [ ] Try to use Johnny 5 for some things
 - [ ] Self-powered particle (battery sheild or VIN from arduino)
-

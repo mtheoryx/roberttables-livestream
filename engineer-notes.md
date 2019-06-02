@@ -35,9 +35,16 @@
 
 ### Stream Notes
 
+COPY . /app
+
 - Markdown like a regular post
-- Frontmatter optional (consider adding some)
-- Listed on Stream notes main page (truncated, paginated)
+- Frontmatter optional (consider adding some?)
+- Listed on Stream notes main page (truncated, paginated, sorted)
+  - How to sort by "date" without frontmatter?
+  - How to sort by date
+  - How to limit
+  - How to paginate?
+  - How to make page navigation (next, prev)
 - Each has their separate page under the stream notes main page/route too
 
 ### Blog posts

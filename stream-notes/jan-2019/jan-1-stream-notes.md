@@ -1,12 +1,17 @@
-# Stream Notes January 1, 2019 
+---
+date: '2019-1-1'
+category: 'Software'
+description: ''
+---
 
-## Goals ### Wrap up gatsby command 
+# Stream Notes January 1, 2019
+
+## Goals ### Wrap up gatsby command
 
 - [x] Validate we can create a smaller image with just git added to alpine
 - [x] Run it
 - [x] alias it
 - [x] Alias it with new
-
 
 TODO:
 

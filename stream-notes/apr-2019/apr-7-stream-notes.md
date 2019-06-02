@@ -1,3 +1,9 @@
+---
+date: '2019-4-7'
+category: 'Software'
+description: ''
+---
+
 # Stream notes April 7, 2019
 
 Use particle photon, vs code, webhooks, github
@@ -28,4 +34,4 @@ to make an alerter bot for various actions
 
 ## Things we learned
 
-- 
+-

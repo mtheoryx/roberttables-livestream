@@ -1,4 +1,10 @@
-# Stream notes Saturday Dec 29, 2018
+---
+date: '2018-12-29'
+category: 'Software'
+description: ''
+---
+
+# Stream notes Dec 29, 2018
 
 ## Topics
 

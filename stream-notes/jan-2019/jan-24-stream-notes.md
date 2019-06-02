@@ -1,3 +1,9 @@
+---
+date: '2019-1-24'
+category: 'Software'
+description: ''
+---
+
 # Stream notes January 24, 2019
 
 ## Segments

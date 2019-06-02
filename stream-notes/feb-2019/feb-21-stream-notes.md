@@ -1,3 +1,9 @@
+---
+date: '2019-2-21'
+category: 'Software'
+description: ''
+---
+
 # Stream notes February 21, 2019
 
 ## Segments
@@ -28,6 +34,6 @@
 
 - Clean up our mess
 - Add a BUNCH more images/logos/icons
-- Fill out the copy and the client copy, 
+- Fill out the copy and the client copy,
 - (and validate switching works) off stream or off screen during stream
 - Buy a soldering iron for keyboard build

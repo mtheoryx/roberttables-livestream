@@ -1,4 +1,10 @@
-# Stream notes Tuesday January 8, 2019
+---
+date: '2019-1-8'
+category: 'Software'
+description: ''
+---
+
+# Stream notes January 8, 2019
 
 ## Segments
 

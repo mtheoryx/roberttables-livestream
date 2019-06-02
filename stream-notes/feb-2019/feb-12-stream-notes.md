@@ -1,3 +1,9 @@
+---
+date: '2019-2-12'
+category: 'Software'
+description: ''
+---
+
 # Stream notes February 12, 2019
 
 ## Segments
@@ -31,4 +37,3 @@
 - Dynamically get my public IP to add to the SG rule
 - Select an AMI on the fly
 - Spin up and create an output in the logs with IP and key file name?
-

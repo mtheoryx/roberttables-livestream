@@ -1,3 +1,9 @@
+---
+date: '2019-4-4'
+category: 'Software'
+description: ''
+---
+
 # Stream notes April 4, 2019
 
 ## Segments
@@ -7,7 +13,6 @@
 - [x] Git project settings
 - [ ] DO THE THING
 - [ ] Retro and raid
-
 
 ## Goals
 
