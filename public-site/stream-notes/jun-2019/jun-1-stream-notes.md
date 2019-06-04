@@ -31,6 +31,6 @@ description: ""
 
 ## Meta
 
-- [Project Manual)(https://www.elenco.com/wp-content/uploads/2017/10/AMFM-108CK_low-res-2.pdf)
+- [Project Manual](https://www.elenco.com/wp-content/uploads/2017/10/AMFM-108CK_low-res-2.pdf)
 - [Project Purchase Page](https://www.amazon.com/gp/product/B008515U1U)
 - cpayette dedicated 500, 200 bits toward usbhub "gofundme"

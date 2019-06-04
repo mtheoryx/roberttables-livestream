@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -9,46 +9,72 @@ const StreamNotes = ({ data }) => {
       <h1>Stream Notes Page!!</h1>
       <h2>June</h2>
       <p>{data.JuneStreamNotes.edges.length} Streams notes!</p>
-      {data.JuneStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
+      {data.JuneStreamNotes.edges.map(({ node }) => (
+        <li key={node.id}>
+          <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+        </li>
       ))}
 
       <hr />
       <h2>May</h2>
       <p>{data.MayStreamNotes.edges.length} Streams notes!</p>
-      {data.MayStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
-      ))}
+      <ul>
+        {data.MayStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
       <hr />
       <h2>April</h2>
       <p>{data.AprilStreamNotes.edges.length} Streams notes!</p>
-      {data.AprilStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
-      ))}
+      <ul>
+        {data.AprilStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
       <hr />
       <h2>March</h2>
       <p>{data.MarchStreamNotes.edges.length} Streams notes!</p>
-      {data.MarchStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
-      ))}
+      <ul>
+        {data.MarchStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
       <hr />
       <h2>February</h2>
       <p>{data.FebruaryStreamNotes.edges.length} Streams notes!</p>
-      {data.FebruaryStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
-      ))}
+      <ul>
+        {data.FebruaryStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
       <hr />
       <h2>January</h2>
       <p>{data.JanuaryStreamNotes.edges.length} Streams notes!</p>
-      {data.JanuaryStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
-      ))}
+      <ul>
+        {data.JanuaryStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
       <hr />
       <h2>December</h2>
       <p>{data.DecemberStreamNotes.edges.length} Streams notes!</p>
-      {data.DecemberStreamNotes.edges.map(note => (
-        <div key={note.node.id}>{note.node.headings[0].value}</div>
-      ))}
+      <ul>
+        {data.DecemberStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
     </Layout>
   )
 }
@@ -68,6 +94,9 @@ export const pageQuery = graphql`
           headings(depth: h1) {
             value
           }
+          fields {
+            slug
+          }
         }
       }
     }
@@ -81,6 +110,9 @@ export const pageQuery = graphql`
           excerpt
           headings(depth: h1) {
             value
+          }
+          fields {
+            slug
           }
         }
       }
@@ -96,6 +128,9 @@ export const pageQuery = graphql`
           headings(depth: h1) {
             value
           }
+          fields {
+            slug
+          }
         }
       }
     }
@@ -109,6 +144,9 @@ export const pageQuery = graphql`
           excerpt
           headings(depth: h1) {
             value
+          }
+          fields {
+            slug
           }
         }
       }
@@ -124,6 +162,9 @@ export const pageQuery = graphql`
           headings(depth: h1) {
             value
           }
+          fields {
+            slug
+          }
         }
       }
     }
@@ -138,6 +179,9 @@ export const pageQuery = graphql`
           headings(depth: h1) {
             value
           }
+          fields {
+            slug
+          }
         }
       }
     }
@@ -151,6 +195,9 @@ export const pageQuery = graphql`
           excerpt
           headings(depth: h1) {
             value
+          }
+          fields {
+            slug
           }
         }
       }
