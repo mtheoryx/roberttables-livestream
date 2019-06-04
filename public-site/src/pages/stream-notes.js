@@ -12,6 +12,7 @@ const StreamNotes = ({ data }) => {
       {data.JuneStreamNotes.edges.map(note => (
         <div key={note.node.id}>{note.node.headings[0].value}</div>
       ))}
+
       <hr />
       <h2>May</h2>
       <p>{data.MayStreamNotes.edges.length} Streams notes!</p>
