@@ -9,11 +9,13 @@ const StreamNotes = ({ data }) => {
       <h1>Stream Notes Page!!</h1>
       <h2>June</h2>
       <p>{data.JuneStreamNotes.edges.length} Streams notes!</p>
-      {data.JuneStreamNotes.edges.map(({ node }) => (
-        <li key={node.id}>
-          <Link to={node.fields.slug}>{node.headings[0].value}</Link>
-        </li>
-      ))}
+      <ul>
+        {data.JuneStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+          </li>
+        ))}
+      </ul>
 
       <hr />
       <h2>May</h2>
