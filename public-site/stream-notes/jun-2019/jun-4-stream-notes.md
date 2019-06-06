@@ -4,7 +4,7 @@ category: "Software"
 description: ""
 ---
 
-# Stream notes June 4, 2018
+# Stream notes June 4, 2019
 
 ## Segments
 
