@@ -11,8 +11,8 @@ draft: true
 
 - [x] Fix yo stuff from the software update, bobby
 - [x] Look at a proper PR to this repo as a way of teaching others
-- [ ] I have a HUGE ask from my communinity SOON
-- [ ] DO THE THING
+- [x] I have a HUGE ask from my communinity SOON
+- [x] DO THE THING
 - [ ] Retrospective
 - [ ] SHIP IT
 - [ ] THEN raid plans
@@ -20,7 +20,9 @@ draft: true
 
 ## Goals
 
-- 
+- [x] Update master/prod with latest stuff at least
+- [ ] Lets get cloudfront and for real prod
+- [ ] Also let's explore draft/published designation and filtering
 
 ## Next steps
 
