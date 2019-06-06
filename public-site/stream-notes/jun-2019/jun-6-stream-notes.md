@@ -33,4 +33,5 @@ draft: true
 - I need to publish an amz wishlist... but
 - I don't know how to do it
 - [cpayette recco](https://www.morewithlesstoday.com/set-wish-list-amazon-com/)
+- [cpayette grove sensor alcohol](https://www.seeedstudio.com/Grove-Alcohol-Sensor-p-764.html)
 -
