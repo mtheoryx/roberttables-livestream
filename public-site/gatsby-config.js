@@ -1,10 +1,23 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Ruh-burtables`,
-    description: `Online destination for roberttables stream and community to learn and grow together`,
+    description: `Online destination for roberttables twitch stream and community to learn and grow together`,
     author: `David Poindexter`,
+    navLinks: [
+      { name: "schedule", link: "/schedule" },
+      { name: "stream notes", link: "/stream-notes" },
+      { name: "events", link: "/events" },
+      { name: "contributors", link: "/contributors" },
+      { name: "equipment", link: "/equipment" },
+      { name: "resources", link: "/resources" },
+      { name: "articles", link: "/articles" },
+      { name: "contact", link: "/contact" },
+    ],
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,6 +40,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `stream-notes-pages`,
+        path: `${__dirname}/stream-notes`,
+      },
+    },
+    "gatsby-transformer-remark",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
