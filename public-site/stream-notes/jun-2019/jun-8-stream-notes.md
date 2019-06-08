@@ -8,24 +8,33 @@ description: "Continuing AM/FM Radio build (Day 2)"
 
 ## Segments
 
-- [ ] Happy Hardware Saturday!
-- [ ] News for next week (Tues/Thurs), Sat Hardware still on
-- [ ] Check out the site!!
-- [ ] DO THE THING
-- [ ] Retrospective / Raid Plans
+- [x] Happy Hardware Saturday!
+- [x] News for next week (Tues/Thurs), Sat Hardware still on
+- [x] Check out the site!!
+- [x] DO THE THING
+- [x] Retrospective / Raid Plans
 
 ## Goals
 
-- [ ] Finish the speaker assembly
-- [ ] Do the static test (No amps on this Fluke 101)
-- [ ] Complete the IC - Transistor Amplifier switch
-- [ ] Do the static tests that we can
+- [x] Finish the speaker assembly
+- [x] Do the static test (No amps on this Fluke 101)
+- [x] Complete the IC - Transistor Amplifier switch
+- [x] Do the static tests that we can
 - [ ] Work on the AM Detector and test
 -
 
+## What did we learn
+
+- I need some kind of a jig to pre-tin wires for solder prep
+- We should probably have a commands command that gets sent to chat regularly
+- (PakmanJr): If you bend pins out a tiny bit you can get better socket adhesion
+
 ## Next steps
 
-- 
+- AM Detector and test
+- 2nd, then 1st amplifiers
+- I wonder how that transistor board will hold up just attached on the socket?
+-
 
 ## Meta
 
