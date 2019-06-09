@@ -2,7 +2,6 @@
 date: "2019-06-06"
 category: "Software"
 description: ""
-draft: true
 ---
 
 # Stream notes June 6, 2019
