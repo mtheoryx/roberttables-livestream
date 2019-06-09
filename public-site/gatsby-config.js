@@ -8,7 +8,7 @@ module.exports = {
     navLinks: [
       { name: "schedule", link: "/schedule" },
       { name: "stream notes", link: "/stream-notes" },
-      { name: "events", link: "/events" },
+      { name: "projects", link: "/projects" },
       { name: "contributors", link: "/contributors" },
       { name: "equipment", link: "/equipment" },
       { name: "resources", link: "/resources" },
@@ -47,7 +47,29 @@ module.exports = {
         path: `${__dirname}/stream-notes`,
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `stream-projects-pages`,
+        path: `${__dirname}/projects`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+            },
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

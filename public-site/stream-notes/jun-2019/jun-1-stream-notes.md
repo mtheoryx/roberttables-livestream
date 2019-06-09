@@ -1,7 +1,7 @@
 ---
 date: "2019-06-01"
-category: "Software"
-description: ""
+category: "Hardware"
+description: "AM/FM Radio build (Day 1)"
 ---
 
 # Stream notes June 1, 2019

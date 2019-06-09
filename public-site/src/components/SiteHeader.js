@@ -6,7 +6,6 @@ import Navigation from "./Navigation"
 
 const StyledHeader = styled.header`
   background: rebeccapurple;
-  margin-bottom: 1rem;
   div {
     margin: 0 auto;
     max-width: 960px;

@@ -76,7 +76,7 @@ const StyledNav = styled.nav`
       flex-direction: row;
       justify-content: space-between;
       margin: 0 auto;
-      padding: 0 1.0875rem;
+      padding: 0.5rem 1.0875rem;
       li {
         display: block;
         padding: 0;
