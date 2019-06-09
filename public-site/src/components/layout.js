@@ -17,6 +17,7 @@ import "./layout.css"
 const StyledContainer = styled.div`
   margin: 0 auto;
   max-width: 960px;
+  margin-top: 1rem;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
 `
