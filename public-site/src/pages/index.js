@@ -82,9 +82,23 @@ const IndexPage = () => (
         </p>
         <h3>Get Involved in the Community</h3>
         <p>
-          Come visit us at <a href="https://twitch.tv/roberttables" target="_blank">our stream</a>, or
-          check out the diverse talent on the <a href="https://www.twitch.tv/team/livecoders" target="_blank">Live Coders
-          team</a>.
+          Come visit us at{" "}
+          <a
+            href="https://twitch.tv/roberttables"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            our stream
+          </a>
+          , or check out the diverse talent on the{" "}
+          <a
+            href="https://www.twitch.tv/team/livecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Coders team
+          </a>
+          .
         </p>
       </Main>
     </Container>
