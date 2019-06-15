@@ -8,26 +8,28 @@ description: "Continuing AM/FM Radio build (day 3)"
 
 ## Segments
 
-- [ ] And we're back!
-- [ ] Training update
-- [ ] Some new stuff on the site
-- [ ] DO THE THING
-- [ ] Show and Tell (and new challenges)
-- [ ] Retrospective / Raid plans
+- [x] And we're back!
+- [x] Training update
+- [x] Some new stuff on the site
+- [x] DO THE THING
+- [x] Show and Tell (and new challenges)
+- [x] Retrospective / Raid plans
 
 ## Goals
 
-- [ ] AM Detector and test
+- [x] AM Detector and test
 - [ ] 2nd AM amplifier
 - [ ] 1st AM amplifier
 
 ## What did we learn
 
+- Dramakins is a streamer working on gameboy games, and a new one to raid
+- Stream is excited about the new SMD component projects
 -
 
 ## Next steps
 
--
+- The 2-stage intermediate frequency (IF) amplifier(s)
 
 ## Meta
 
