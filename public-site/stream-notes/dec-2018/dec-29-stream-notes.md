@@ -1,7 +1,7 @@
 ---
-date: '2018-12-29'
-category: 'Software'
-description: ''
+date: "2018-12-29"
+category: "Software"
+description: "Docker and Gatsby, gotchas and project setup"
 ---
 
 # Stream notes Dec 29, 2018

@@ -1,6 +1,6 @@
 ---
 date: "2019-03-09"
-category: "Software"
+category: "Hardware"
 description: ""
 ---
 

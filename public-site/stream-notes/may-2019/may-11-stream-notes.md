@@ -1,7 +1,7 @@
 ---
-date: '2019-05-11'
-category: 'Software'
-description: ''
+date: "2019-05-11"
+category: "Hardware"
+description: ""
 ---
 
 # Stream notes May 11, 2019
