@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 
-const navBreakage = 740
+const navBreakage = 850
 
 const getWidth = () => {
   return {

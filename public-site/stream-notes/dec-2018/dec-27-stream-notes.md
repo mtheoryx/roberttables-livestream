@@ -1,18 +1,18 @@
 ---
-date: '2018-12-27'
-category: 'Software'
-description: ''
+date: "2018-12-27"
+category: "Software"
+description: "First official stream!"
 ---
 
 # Stream notes Dec 27, 2018
 
-## Welcomes!
+## Welcome
 
 - [x] Dev skills, tech, Dan Abramov
 - [x] Dev REL talk
 - [x] New devs helping new devs, community
 
-## Improvements!
+## Improvements
 
 - [x] New landing image for offline
 - [x] Follower mode off (Sorry!!)

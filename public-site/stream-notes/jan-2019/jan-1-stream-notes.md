@@ -1,7 +1,7 @@
 ---
 date: "2019-01-01"
 category: "Software"
-description: ""
+description: "Happy new year! Can we make a gatsby command?"
 ---
 
 # Stream Notes January 1, 2019

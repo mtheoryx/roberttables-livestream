@@ -4,15 +4,19 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
 const StreamNotes = ({ data }) => {
+  // todo, use a hook for software/hardware toggle state? Update, category pages
+  // todo, use tag state, perhaps different page? Update: yes, tag pages
   return (
     <Layout>
       <h1>Stream Notes Page!!</h1>
+      {/* Add the state toggle for all, software, hardware */}
       <h2>June</h2>
       <p>{data.JuneStreamNotes.edges.length} Streams notes!</p>
       <ul>
         {data.JuneStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -23,7 +27,8 @@ const StreamNotes = ({ data }) => {
       <ul>
         {data.MayStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -33,7 +38,8 @@ const StreamNotes = ({ data }) => {
       <ul>
         {data.AprilStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -43,7 +49,8 @@ const StreamNotes = ({ data }) => {
       <ul>
         {data.MarchStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -53,7 +60,8 @@ const StreamNotes = ({ data }) => {
       <ul>
         {data.FebruaryStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -63,7 +71,8 @@ const StreamNotes = ({ data }) => {
       <ul>
         {data.JanuaryStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -73,7 +82,8 @@ const StreamNotes = ({ data }) => {
       <ul>
         {data.DecemberStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={node.fields.slug}>{node.headings[0].value}</Link>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
           </li>
         ))}
       </ul>
@@ -93,6 +103,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }
@@ -110,6 +123,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }
@@ -127,6 +143,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }
@@ -144,6 +163,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }
@@ -161,6 +183,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }
@@ -178,6 +203,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }
@@ -195,6 +223,9 @@ export const pageQuery = graphql`
         node {
           id
           excerpt
+          frontmatter {
+            category
+          }
           headings(depth: h1) {
             value
           }

@@ -10,7 +10,7 @@ module.exports = {
       { name: "stream notes", link: "/stream-notes" },
       { name: "projects", link: "/projects" },
       { name: "contributors", link: "/contributors" },
-      { name: "equipment", link: "/equipment" },
+      { name: "equipment & software", link: "/equipment-and-software" },
       { name: "resources", link: "/resources" },
       { name: "articles", link: "/articles" },
       { name: "contact", link: "/contact" },
@@ -52,6 +52,13 @@ module.exports = {
       options: {
         name: `stream-projects-pages`,
         path: `${__dirname}/projects`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `equipment-and-software-pages`,
+        path: `${__dirname}/equipment-and-software`,
       },
     },
     {
