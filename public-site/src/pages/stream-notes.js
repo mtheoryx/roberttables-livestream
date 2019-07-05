@@ -4,12 +4,24 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
 const StreamNotes = ({ data }) => {
-  // todo, use a hook for software/hardware toggle state? Update, category pages
-  // todo, use tag state, perhaps different page? Update: yes, tag pages
+  // @TODO: use a hook for software/hardware toggle state? Update, category pages
+  // @TODO: use tag state, perhaps different page? Update: yes, tag pages
   return (
     <Layout>
-      <h1>Stream Notes Page!!</h1>
-      {/* Add the state toggle for all, software, hardware */}
+      <h1>LiveStream Notes</h1>
+      {/* @TODO: Add the state toggle for all, software, hardware */}
+      <h2>July</h2>
+      <p>{data.JulyStreamNotes.edges.length} Streams notes!</p>
+      <ul>
+        {data.JulyStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
+          </li>
+        ))}
+      </ul>
+
+      <hr />
       <h2>June</h2>
       <p>{data.JuneStreamNotes.edges.length} Streams notes!</p>
       <ul>
@@ -95,6 +107,26 @@ export default StreamNotes
 
 export const pageQuery = graphql`
   query {
+    JulyStreamNotes: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/jul-2019/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            category
+          }
+          headings(depth: h1) {
+            value
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
     JuneStreamNotes: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/jun-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }

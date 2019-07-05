@@ -179,3 +179,5 @@ $RECYCLE.BIN/
 # Gatsby ignores
 public-site/public
 *.sketch
+engineer-notes.md
+scratch.js
