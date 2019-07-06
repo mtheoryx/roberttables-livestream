@@ -16,7 +16,11 @@ const StreamNotes = ({ data }) => {
         {data.JulyStreamNotes.edges.map(({ node }) => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
-            {node.frontmatter.category}
+            <Link
+              to={`/categories/${node.frontmatter.category.toLowerCase()}/`}
+            >
+              {node.frontmatter.category}
+            </Link>
           </li>
         ))}
       </ul>

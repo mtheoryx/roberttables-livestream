@@ -7,7 +7,7 @@ module.exports = {
     author: `David Poindexter`,
     navLinks: [
       { name: "schedule", link: "/schedule" },
-      { name: "stream notes", link: "/stream-notes" },
+      { name: "stream notes", link: "/stream-notes-index" },
       { name: "projects", link: "/projects" },
       { name: "contributors", link: "/contributors" },
       { name: "equipment & software", link: "/equipment-and-software" },
