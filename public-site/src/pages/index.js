@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Helmet from "react-helmet"
 import profile from "../images/profile-pic.png"
 import Layout from "../components/layout"
 
@@ -36,6 +37,15 @@ const Main = styled.div`
 
 const IndexPage = () => (
   <Layout>
+    <Helmet
+      title="Home | Roberttables"
+      meta={[
+        {
+          name: "description",
+          content: "Stream website for Roberttables on Twitch",
+        },
+      ]}
+    />
     <Container>
       <Side>
         <img src={profile} alt="Author Profile" />

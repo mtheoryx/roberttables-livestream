@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 
@@ -8,6 +9,15 @@ const StreamNotes = ({ data }) => {
   // @TODO: use tag state, perhaps different page? Update: yes, tag pages
   return (
     <Layout>
+      <Helmet
+        title="Livestream Notes | Roberttables"
+        meta={[
+          {
+            name: "description",
+            content: "Stream notes",
+          },
+        ]}
+      />
       <h1>LiveStream Notes</h1>
       {/* @TODO: Add the state toggle for all, software, hardware */}
       <h2>July</h2>

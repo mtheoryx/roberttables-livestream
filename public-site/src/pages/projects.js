@@ -1,11 +1,21 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 
 const ProjectsIndex = ({ data }) => {
   return (
     <Layout>
+      <Helmet
+        title="Projects | Roberttables"
+        meta={[
+          {
+            name: "description",
+            content: "Hardware and Software projects built on stream",
+          },
+        ]}
+      />
       <h1>Projects</h1>
       <p>
         <em>
@@ -46,7 +56,7 @@ export default ProjectsIndex
 export const pageQuery = graphql`
   query {
     Projects: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/projects/"}}
+      filter: { fileAbsolutePath: { regex: "/projects/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
