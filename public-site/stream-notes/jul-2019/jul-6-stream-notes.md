@@ -8,21 +8,28 @@ category: "Hardware"
 
 ## Segments
 
-- Show and tell
-- Emotes!
-- DO THE THING
-- Retrospective
-- Raid
+- [x] Show and tell
+- [x] Emotes!
+- [x] DO THE THING
+- [x] Retrospective
+- [x] Raid?
 
 ## Goals
 
-- 2nd AM IF amplifier & static test
-- 1st AM IF amplifier & static test
+- [x] 2nd AM IF amplifier & static test
+- [x] 1st AM IF amplifier & static test
 -
 
 ## What did we learn
 
 -
+
+## Next steps
+
+- Install the antenna and tuner
+- Tune the antenna
+- Tune the am IF coils
+- Test if the radio works
 
 ## Stream meta
 
