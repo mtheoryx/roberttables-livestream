@@ -34,8 +34,8 @@ const ProjectsIndex = ({ data }) => {
       </p>
       <hr />
       {data.Projects.edges.map(({ node }) => (
-        <>
-          <div key={node.id}>
+        <React.Fragment key={node.id}>
+          <div>
             <Link to={node.fields.slug}>
               {node.frontmatter.title} - {node.frontmatter.date}
             </Link>{" "}
@@ -45,7 +45,7 @@ const ProjectsIndex = ({ data }) => {
             Status: {node.frontmatter.complete ? "Complete" : "In-progress"}
           </div>
           <hr />
-        </>
+        </React.Fragment>
       ))}
     </Layout>
   )
