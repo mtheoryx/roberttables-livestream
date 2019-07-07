@@ -4,25 +4,25 @@ import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 
-const StreamNotes = ({ data }) => {
-  const note = data.markdownRemark
+const ProjectDetail = ({ data }) => {
+  const project = data.markdownRemark
   return (
     <Layout>
       <Helmet
-        title={`${note.frontmatter.date} Stream Notes | Roberttables`}
+        title={`${project.frontmatter.title} | Roberttables`}
         meta={[
           {
             name: "description",
-            content: note.frontmatter.description,
+            content: project.frontmatter.description,
           },
         ]}
       />
-      <div dangerouslySetInnerHTML={{ __html: note.html }} />
+      <div dangerouslySetInnerHTML={{ __html: project.html }} />
     </Layout>
   )
 }
 
-export default StreamNotes
+export default ProjectDetail
 
 export const query = graphql`
   query($slug: String) {
@@ -31,6 +31,7 @@ export const query = graphql`
       frontmatter {
         date(formatString: "ll")
         description
+        title
       }
     }
   }

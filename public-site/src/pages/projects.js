@@ -1,11 +1,21 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 
 const ProjectsIndex = ({ data }) => {
   return (
     <Layout>
+      <Helmet
+        title="Projects | Roberttables"
+        meta={[
+          {
+            name: "description",
+            content: "Hardware and Software projects built on stream",
+          },
+        ]}
+      />
       <h1>Projects</h1>
       <p>
         <em>
@@ -24,8 +34,8 @@ const ProjectsIndex = ({ data }) => {
       </p>
       <hr />
       {data.Projects.edges.map(({ node }) => (
-        <>
-          <div key={node.id}>
+        <React.Fragment key={node.id}>
+          <div>
             <Link to={node.fields.slug}>
               {node.frontmatter.title} - {node.frontmatter.date}
             </Link>{" "}
@@ -35,7 +45,7 @@ const ProjectsIndex = ({ data }) => {
             Status: {node.frontmatter.complete ? "Complete" : "In-progress"}
           </div>
           <hr />
-        </>
+        </React.Fragment>
       ))}
     </Layout>
   )
@@ -46,7 +56,7 @@ export default ProjectsIndex
 export const pageQuery = graphql`
   query {
     Projects: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/projects/"}}
+      filter: { fileAbsolutePath: { regex: "/projects/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
