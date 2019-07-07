@@ -17,12 +17,16 @@ const EquipmentAndSoftwareIndex = ({ data }) => (
     />
     <h1>Equipment and Software Used on Stream</h1>
     {data.Tools.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-        <br />
-        {node.frontmatter.description}
-        Category: {node.frontmatter.category}
-      </div>
+      <React.Fragment key={node.id}>
+        <div>
+          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          <br />
+          {node.frontmatter.description}
+          <br />
+          Category: {node.frontmatter.category}
+        </div>
+        <hr />
+      </React.Fragment>
     ))}
   </Layout>
 )

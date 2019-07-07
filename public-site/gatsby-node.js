@@ -82,6 +82,18 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       // Create the tooling pages
+      if (
+        node.fileAbsolutePath &&
+        node.fileAbsolutePath.includes("/equipment-and-software/")
+      ) {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve("./src/pages/equipment-detail-template.js"),
+          context: {
+            slug: node.fields.slug,
+          },
+        })
+      }
     })
   })
 }
