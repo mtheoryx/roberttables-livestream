@@ -1,6 +1,6 @@
 ---
-title: "VS Code Details"
-description: "My VS Code extensions, font, theme, and config"
+title: "Stream Software"
+description: "Software tooling used on stream"
 category: "Software"
 ---
 

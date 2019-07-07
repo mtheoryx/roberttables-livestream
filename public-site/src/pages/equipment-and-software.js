@@ -1,18 +1,32 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 
 const EquipmentAndSoftwareIndex = ({ data }) => (
   <Layout>
+    <Helmet
+      title="Equipment & Software | Roberttables"
+      meta={[
+        {
+          name: "description",
+          content: "Equipment and Software Used on Stream",
+        },
+      ]}
+    />
     <h1>Equipment and Software Used on Stream</h1>
     {data.Tools.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-        <br />
-        {node.frontmatter.description}
-        Category: {node.frontmatter.category}
-      </div>
+      <React.Fragment key={node.id}>
+        <div>
+          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          <br />
+          {node.frontmatter.description}
+          <br />
+          Category: {node.frontmatter.category}
+        </div>
+        <hr />
+      </React.Fragment>
     ))}
   </Layout>
 )
