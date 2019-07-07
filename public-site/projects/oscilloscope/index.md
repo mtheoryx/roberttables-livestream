@@ -8,7 +8,7 @@ draft: false
 complete: true
 ---
 
-# AM / FM Radio Build
+# Oscilloscope Build
 
 Building an oscilloscope? Why?? Because it's cheap, a learning experience, and is something I'd like to use for some other problems
 with things like looking at and learning analogue button debouncing.
