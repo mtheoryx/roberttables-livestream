@@ -1,6 +1,6 @@
 ---
 title: "Stream Hardware"
-description: "My Stream-related hardware"
+description: "Hardware used on stream"
 category: "Hardware"
 ---
 
