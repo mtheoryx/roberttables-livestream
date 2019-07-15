@@ -8,28 +8,30 @@ category: "Hardware"
 
 ## Segments
 
-- Stream intro, stream updates and gather opinions
-- Review our progress from last saturday
-- DO THE THING
-- Retrospective
-- Raid and Sunday Preview!
+- [x] Stream intro, stream updates and gather opinions
+- [x] Review our progress from last saturday
+- [x] DO THE THING
+- [x] Retrospective
+- [x] Raid and Sunday Preview!
 
 ## Goals
 
-- Get the AM antenna mounted and tuned
-- Hear a thing!
-- Plan the FM side of the board
-- Plan the next hardware project after the Radio
+- [x] Get the AM antenna mounted and tuned
+- [x] Hear a thing!
+- [ ] Plan the FM side of the board
+- [ ] Plan the next hardware project after the Radio
 
 ## What did we learn
 
+- Use the right tool for the right job, heat gun on shrink tubing
 -
 
 ## Next steps
 
-- Order the long USB cable CheffyB recommended
-- Order the USB hub partially financed by cpayette
--
+- [ ] Order the long USB cable CheffyB recommended
+- [ ] Order the USB hub partially financed by cpayette
+- [ ] Plan out the rest of the stream scenes
+- [ ] Re-find my motion/fcp templates, buy motion
 
 ## Stream meta
 
