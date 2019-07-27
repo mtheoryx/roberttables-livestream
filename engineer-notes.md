@@ -1,5 +1,12 @@
 # Engineer working notes
 
+## Typographyjs
+
+- Theme: Grand View
+- font size 16.00 px, line height 1.7, scale ratio: 2.00, paragraph spacing 1.00 rhythm
+- Headings: Source Serif Pro, weight 700, gray value 0
+- Body: Roboto, weight 400, bold weight 700, gray value 20%
+
 ## To research
 
 - [ ] Fonts and typography
@@ -24,17 +31,16 @@
 - [ ] Home (Index.js)
 - [ ] Stream notes
   - [x] List page
-  - [ ] List page linkable
+  - [x] List page linkable
   - [ ] Possibly paginated?
-  - [ ] Individual pages for notes
+  - [x] Individual pages for notes
 - [ ] Articles (maybe call it specials or something... not blog posts)
 - [ ] About
+  - [ ] Shoppping List
+  - [ ] Contributors
 - [ ] Schedule
-- [ ] Events
-- [ ] Contributors
 - [ ] 404
-- [ ] Shoppping List
-- [ ] Resources
+- [x] Resources
 - [ ] Contact
 
 ### Stream Notes
