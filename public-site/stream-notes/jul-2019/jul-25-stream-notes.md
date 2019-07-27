@@ -8,17 +8,17 @@ description: "Enable service-to-service communication"
 
 ## Segments
 
-- Show and tell
-- Upcoming events
-- DO THE THING
-- Retrospective
-- Raid
+- [x] Show and tell
+- [x] Upcoming events
+- [ ] DO THE THING
+- [ ] Retrospective
+- [ ] Raid
 
 ## Goals
 
-- Set up a server in the containers
-- Set up container to container networking
-- Parse chat from reader service, trigger writer service
+- [ ] Set up a server in the containers
+- [ ] Set up container to container networking
+- [ ] Parse chat from reader service, trigger writer service
 -
 
 ## What did we learn
