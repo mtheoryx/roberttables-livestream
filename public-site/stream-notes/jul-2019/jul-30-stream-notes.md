@@ -9,21 +9,21 @@ series: "Teach me Tuesdays"
 
 ## Segments
 
-- Some stream findings and results from an experiment
-- Tooling overview, current assets, and organization
-- Lay out the steps to prod
-- DO THE THING
-- Retrospective
-- Raid and publish
+- [x] Some stream findings and results from an experiment
+- [x] Tooling overview, current assets, and organization
+- [x] Lay out the steps to prod
+- [ ] DO THE THING
+- [ ] Retrospective
+- [ ] Raid and publish
 
 ## Goals
 
-- Use the existing github repo
-- Include the sketch file?
-- Fly a kite to dev/prod naming in Amplify
-- A generated skeleton
-- A place to fill in the details
-- PRs are open, please halp
+- [x] Use the existing github repo
+- [ ] Include the sketch file?
+- [ ] Fly a kite to dev/prod naming in Amplify
+- [ ] A generated skeleton
+- [ ] A place to fill in the details
+- [ ] PRs are open, please halp
 
 ## What did we learn
 
@@ -31,7 +31,9 @@ series: "Teach me Tuesdays"
 
 ## Next steps
 
--
+- Configure the repo correctly for community
+- Get gatsby and docker set up
+- Decide on graphics assets
 
 ## Meta
 
