@@ -20,6 +20,18 @@ const StreamNotes = ({ data }) => {
       />
       <h1>LiveStream Notes</h1>
       {/* @TODO: Add the state toggle for all, software, hardware */}
+      <h2>August</h2>
+      <p>{data.AugustStreamNotes.edges.length} Streams notes!</p>
+      <ul>
+        {data.AugustStreamNotes.edges.map(({ node }) => (
+          <li key={node.id}>
+            <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
+            {node.frontmatter.category}
+          </li>
+        ))}
+      </ul>
+
+      <hr />
       <h2>July</h2>
       <p>{data.JulyStreamNotes.edges.length} Streams notes!</p>
       <ul>
@@ -117,6 +129,26 @@ export default StreamNotes
 
 export const pageQuery = graphql`
   query {
+    AugustStreamNotes: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/aug-2019/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            category
+          }
+          headings(depth: h1) {
+            value
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
     JulyStreamNotes: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/jul-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
