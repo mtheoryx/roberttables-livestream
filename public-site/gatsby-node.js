@@ -60,7 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/pages/stream-notes-template.js"),
+          component: path.resolve("./src/templates/stream-notes-template.js"),
           context: {
             slug: node.fields.slug,
           },
@@ -74,7 +74,9 @@ exports.createPages = ({ graphql, actions }) => {
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/pages/projects-detail-template.js"),
+          component: path.resolve(
+            "./src/templates/projects-detail-template.js"
+          ),
           context: {
             slug: node.fields.slug,
           },
@@ -88,7 +90,9 @@ exports.createPages = ({ graphql, actions }) => {
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/pages/equipment-detail-template.js"),
+          component: path.resolve(
+            "./src/templates/equipment-detail-template.js"
+          ),
           context: {
             slug: node.fields.slug,
           },
