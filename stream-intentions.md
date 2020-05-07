@@ -9,15 +9,13 @@ The week of Feb 24 to 29 is the week off to breath, think deep, and consider our
 Each day for 3 to 4 hours is doable
 Not the normal schedule, let's experiment
 
-
-
 - [x] iCS subription (and sync)
 - [x] security, specifically around MFA, and how api keys are handled
 - [x] Investigate the "get stuff" api
 - [x] [Configure localhost with SSL](https://dev.to/kauresss/2-minute-self-signed-ssl-certificate-for-localhost-5817)
 - [x] How fast can I pump "stuff" into a "base" (50 records per second)
 
-Looks like there is no native graphql endpoint, so we can make our own with blackjack and hookers:
+Looks like there is no native graphql endpoint, so we can make our own:
 
 https://dev.to/adrienshen/creating-a-data-pipeline-from-airtable-to-backend-31m0
 
@@ -70,14 +68,13 @@ I would like to have it dual-purpose the top-down on the main stream/code, and a
 This is usually around the time that some charity things kick off, should we participate?
 Also last good-weather quarter
 
-
 ## Q4
 
 Ends Dec 31st
 
 Goals:
 
-Holiday special
+Holiday Promotion
 Year-end wrapup video
 Blooper reel
 By this point we are going to want a good system for sending OUT perk packages to subs (or other?)

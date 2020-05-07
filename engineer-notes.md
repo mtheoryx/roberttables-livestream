@@ -23,8 +23,8 @@
 - [x] Styling and branding
 - [x] Fonts/Colors
 - [x] Icons/images
-- [x] Simple, mobile-first layout (focus on the nav!)
-- [x] Just. The. Basics.
+- [x] Streamlined, mobile-first layout (focus on the nav!)
+- [x] The. Basics.
 
 ### Base pages
 
