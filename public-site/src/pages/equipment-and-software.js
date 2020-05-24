@@ -16,7 +16,7 @@ const EquipmentAndSoftwareIndex = ({ data }) => (
       ]}
     />
     <h1>Equipment and Software Used on Stream</h1>
-    {data.Tools.edges.map(({ node }) => (
+    {data.allMdx.nodes.map(node => (
       <React.Fragment key={node.id}>
         <div>
           <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
@@ -35,20 +35,18 @@ export default EquipmentAndSoftwareIndex
 
 export const pageQuery = graphql`
   query {
-    Tools: allMarkdownRemark(
+    allMdx(
       filter: { fileAbsolutePath: { regex: "/equipment-and-software/" } }
     ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            description
-            category
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        frontmatter {
+          title
+          description
+          category
+        }
+        fields {
+          slug
         }
       }
     }

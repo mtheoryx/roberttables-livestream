@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/layout"
 
 const ProjectDetail = ({ data }) => {
-  const project = data.markdownRemark
+  const project = data.mdx
   return (
     <Layout>
       <Helmet
@@ -17,7 +18,7 @@ const ProjectDetail = ({ data }) => {
           },
         ]}
       />
-      <div dangerouslySetInnerHTML={{ __html: project.html }} />
+      <MDXRenderer>{project.body}</MDXRenderer>
     </Layout>
   )
 }
@@ -26,8 +27,8 @@ export default ProjectDetail
 
 export const query = graphql`
   query($slug: String) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         date(formatString: "ll")
         description

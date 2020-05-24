@@ -33,7 +33,7 @@ const ProjectsIndex = ({ data }) => {
         continues to evolve live on the stream.
       </p>
       <hr />
-      {data.Projects.edges.map(({ node }) => (
+      {data.allMdx.nodes.map(node => (
         <React.Fragment key={node.id}>
           <div>
             <Link to={node.fields.slug}>
@@ -55,23 +55,20 @@ export default ProjectsIndex
 
 export const pageQuery = graphql`
   query {
-    Projects: allMarkdownRemark(
+    allMdx(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            date
-            title
-            description
-            complete
-          }
-          html
-          fields {
-            slug
-          }
+      nodes {
+        id
+        frontmatter {
+          date
+          title
+          description
+          complete
+        }
+        fields {
+          slug
         }
       }
     }

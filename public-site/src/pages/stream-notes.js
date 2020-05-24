@@ -21,9 +21,9 @@ const StreamNotes = ({ data }) => {
       <h1>LiveStream Notes</h1>
       {/* @TODO: Add the state toggle for all, software, hardware */}
       <h2>August</h2>
-      <p>{data.AugustStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.AugustStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.AugustStreamNotes.edges.map(({ node }) => (
+        {data.AugustStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -33,9 +33,9 @@ const StreamNotes = ({ data }) => {
 
       <hr />
       <h2>July</h2>
-      <p>{data.JulyStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.JulyStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.JulyStreamNotes.edges.map(({ node }) => (
+        {data.JulyStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -45,9 +45,9 @@ const StreamNotes = ({ data }) => {
 
       <hr />
       <h2>June</h2>
-      <p>{data.JuneStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.JuneStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.JuneStreamNotes.edges.map(({ node }) => (
+        {data.JuneStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -57,9 +57,9 @@ const StreamNotes = ({ data }) => {
 
       <hr />
       <h2>May</h2>
-      <p>{data.MayStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.MayStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.MayStreamNotes.edges.map(({ node }) => (
+        {data.MayStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -68,9 +68,9 @@ const StreamNotes = ({ data }) => {
       </ul>
       <hr />
       <h2>April</h2>
-      <p>{data.AprilStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.AprilStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.AprilStreamNotes.edges.map(({ node }) => (
+        {data.AprilStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -79,9 +79,9 @@ const StreamNotes = ({ data }) => {
       </ul>
       <hr />
       <h2>March</h2>
-      <p>{data.MarchStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.MarchStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.MarchStreamNotes.edges.map(({ node }) => (
+        {data.MarchStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -90,9 +90,9 @@ const StreamNotes = ({ data }) => {
       </ul>
       <hr />
       <h2>February</h2>
-      <p>{data.FebruaryStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.FebruaryStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.FebruaryStreamNotes.edges.map(({ node }) => (
+        {data.FebruaryStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -101,9 +101,9 @@ const StreamNotes = ({ data }) => {
       </ul>
       <hr />
       <h2>January</h2>
-      <p>{data.JanuaryStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.JanuaryStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.JanuaryStreamNotes.edges.map(({ node }) => (
+        {data.JanuaryStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -112,9 +112,9 @@ const StreamNotes = ({ data }) => {
       </ul>
       <hr />
       <h2>December</h2>
-      <p>{data.DecemberStreamNotes.edges.length} Streams notes!</p>
+      <p>{data.DecemberStreamNotes.nodes.length} Streams notes!</p>
       <ul>
-        {data.DecemberStreamNotes.edges.map(({ node }) => (
+        {data.DecemberStreamNotes.nodes.map(node => (
           <li key={node.id}>
             <Link to={node.fields.slug}>{node.headings[0].value}</Link> -{" "}
             {node.frontmatter.category}
@@ -129,183 +129,165 @@ export default StreamNotes
 
 export const pageQuery = graphql`
   query {
-    AugustStreamNotes: allMarkdownRemark(
+    AugustStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/aug-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    JulyStreamNotes: allMarkdownRemark(
+    JulyStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/jul-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    JuneStreamNotes: allMarkdownRemark(
+    JuneStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/jun-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    MayStreamNotes: allMarkdownRemark(
+    MayStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/may-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    AprilStreamNotes: allMarkdownRemark(
+    AprilStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/apr-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    MarchStreamNotes: allMarkdownRemark(
+    MarchStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/mar-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    FebruaryStreamNotes: allMarkdownRemark(
+    FebruaryStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/feb-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    JanuaryStreamNotes: allMarkdownRemark(
+    JanuaryStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/jan-2019/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }
-    DecemberStreamNotes: allMarkdownRemark(
+    DecemberStreamNotes: allMdx(
       filter: { fileAbsolutePath: { regex: "/dec-2018/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            category
-          }
-          headings(depth: h1) {
-            value
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          category
+        }
+        headings(depth: h1) {
+          value
+        }
+        fields {
+          slug
         }
       }
     }

@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/layout"
 
 const StreamNotes = ({ data }) => {
-  const note = data.markdownRemark
+  const note = data.mdx
   return (
     <Layout>
       <Helmet
@@ -17,7 +18,7 @@ const StreamNotes = ({ data }) => {
           },
         ]}
       />
-      <div dangerouslySetInnerHTML={{ __html: note.html }} />
+      <MDXRenderer>{note.body}</MDXRenderer>
     </Layout>
   )
 }
@@ -26,8 +27,8 @@ export default StreamNotes
 
 export const query = graphql`
   query($slug: String) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         date(formatString: "ll")
         description
