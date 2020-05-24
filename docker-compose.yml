@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 
 services:
   stream-site:
     build: ./public-site
     image: stream-site
     container_name: stream-site
-    command: npm run develop -- -H 0.0.0.0
+    command: yarn develop -- -H 0.0.0.0
     ports:
       - 8000:8000
     volumes:

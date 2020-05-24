@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Helmet from "react-helmet"
-import profile from "../images/profile-pic.png"
+import profile from "../images/profile-pic.jpg"
 import Layout from "../components/layout"
 
 const Container = styled.div`

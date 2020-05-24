@@ -1,15 +1,10 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   let slug
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     // Create slugs for posts
     if (node.fileAbsolutePath.includes("/stream-notes/")) {
       slug = createFilePath({ node, getNode })
@@ -39,8 +34,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
-    {
-      allMarkdownRemark {
+    query {
+      allMdx {
         edges {
           node {
             fileAbsolutePath
@@ -52,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMdx.edges.forEach(({ node }) => {
       // Create the stream notes pages
       if (
         node.fileAbsolutePath &&
@@ -60,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/pages/stream-notes-template.js"),
+          component: path.resolve("./src/templates/stream-notes-template.js"),
           context: {
             slug: node.fields.slug,
           },
@@ -74,7 +69,9 @@ exports.createPages = ({ graphql, actions }) => {
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/pages/projects-detail-template.js"),
+          component: path.resolve(
+            "./src/templates/projects-detail-template.js"
+          ),
           context: {
             slug: node.fields.slug,
           },
@@ -88,7 +85,9 @@ exports.createPages = ({ graphql, actions }) => {
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/pages/equipment-detail-template.js"),
+          component: path.resolve(
+            "./src/templates/equipment-detail-template.js"
+          ),
           context: {
             slug: node.fields.slug,
           },

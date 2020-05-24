@@ -3,8 +3,8 @@ FROM node:10.15.3
 WORKDIR /usr/app
 
 # Install deps
-COPY ./package.json ./package-lock.json ./
-RUN npm install --quiet
+COPY ./package.json ./yarn.lock ./
+RUN yarn install
 
 # Copy app code
 COPY . .
@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 8000
 
 # Default Command
-CMD ["npm", "run", "start"]
+CMD ["yarn", "start"]
