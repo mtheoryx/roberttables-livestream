@@ -22,10 +22,13 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@mdx-js/mdx": "^1.6.4",
+    "@mdx-js/react": "^1.6.4",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.5.0",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-mdx": "^1.2.12",
     "gatsby-plugin-offline": "^2.1.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.37",
@@ -42,9 +45,9 @@
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.1",
     "alex": "^8.1.1",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "prettier": "^1.17.1"
   },
   "keywords": [
     "gatsby"
